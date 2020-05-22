@@ -51,4 +51,33 @@
   padding-left: 20px;
   font-size: 1.5em; }
 
-/*# sourceMappingURL=header.css.map */
+/* Import of Media Queries Files */
+@media screen and (max-width: 768px) {
+  .main_header {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+
+  .ref_box {
+    margin: 0;
+    width: 100%; }
+
+  .ref_box > img {
+    width: 100%;
+    height: 100%; }
+
+  .nav_links {
+    display: flex;
+    justify-content: center; } }
+@media screen and (max-width: 380px) {
+  .main_header {
+    display: block; }
+
+  .ref_box {
+    display: none; }
+
+  .nav_links {
+    display: flex;
+    justify-content: center; } }
+
+/*# sourceMappingURL=main.css.map */
