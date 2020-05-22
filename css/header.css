@@ -1,0 +1,54 @@
+/*imported files */
+/* Reseting predefined CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif; }
+
+/* File only for the logo */
+.header_logo {
+  margin-left: 20px;
+  letter-spacing: 1px; }
+
+/* used clip_path to make the logo look like a circle */
+.circle_logo {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+  background-color: #BD2512;
+  clip-path: circle(50% at 50% 50%);
+  letter-spacing: 2px; }
+
+/* Header */
+.main_header {
+  background-color: #5B1919;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px; }
+
+.ref_box {
+  margin-right: 20px; }
+
+/* Navbar */
+.main_nav {
+  height: 40px;
+  background-color: #191919; }
+
+.nav_links {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center; }
+
+.nav_links > li > a {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 1.5em; }
+
+/*# sourceMappingURL=header.css.map */
