@@ -1,0 +1,26 @@
+.wrapper_three
+    width: 100%
+
+.main_content 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 30px
+
+.video_header
+    @extend .article_header
+    border-bottom: 3px solid grey
+
+.vid
+    width: 50%
+    height: 400px
+    filter: grayscale(100%)
+
+.vid iframe
+    width: 100%
+    height: 100%
+
+.vid:hover
+    filter: grayscale(0)
+    

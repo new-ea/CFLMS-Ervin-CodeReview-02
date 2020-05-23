@@ -1,31 +1,27 @@
-/*imported files */ 
-@import 'reset'
-@import 'logo'
-@import 'header'
-
-html,
-body 
-    height: auto
-
 /* Style main content */
-.wrapper
-    margin: 0 auto
-    height: 100%
-    width: 90%
+.wrapper_two 
+    display: flex
+    flex-direction: column
+
+.article_header
+    text-align: center
+    margin-top: 25px
+    font-size: 3em
+    border-bottom: 3px solid grey
 
 article
     display: flex
-    flex-direction: row
+    align-items: center
     margin: 40px 10px
     background-color: #eaeaea
     border-radius: 8px
-    box-shadow: -10px -10px 5px silver
+    box-shadow: 10px 10px 5px silver
     
 .article_img
     padding: 10px 
     width: 30%
     height: 100%
-    min-width: 400px
+    // min-width: 400px
 
 .article_img img
     width: 100%
@@ -40,9 +36,3 @@ article
 .articel_txt h2 
     font-size: 2em
     text-decoration: underline
-
-
-@import 'footer.sass'
-/* Import of Media Queries Files*/
-@import 'tablet_vp'
-@import 'mobile_vp'

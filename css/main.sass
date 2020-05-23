@@ -59,6 +59,11 @@ main
     position: relative
     width: 31%
     min-width: 202px
+    transition: transform .5s
+
+.news_ticker:hover,
+.news_ticker_two:hover
+    transform: scale(1.1)
 
 .text-block 
     display: flex
@@ -78,11 +83,16 @@ main
     width: 100%
     height: 100%
 
+/* Ad banner only visible on tablet and phones */
+.mobile_ad 
+    display: none
+
 /* Ad Banner at the side */
-.banner_box1
+.banner_box1,
+.banner_box1 a
     width: 10%
 
-.banner_box1 > img
+.banner_box1  img
     width: 100%
     height: 100%
 
@@ -91,7 +101,8 @@ main
     margin-top: 20px
     text-align: center
 
-.banner_box2 > img
+.banner_box2 a
+.banner_box2 img
     width: 90%
     height: 100%
 
@@ -100,6 +111,7 @@ main
 .news_ticker_two
     width: 48%
     position: relative
+    transition: transform .5s
 
 .news_ticker_two img
     width: 100%
@@ -108,7 +120,16 @@ main
 .box4
     margin-top: 20px
 
-@import 'footer.sass'
+.mobile_view2
+    display: none
+
+@import 'video'
+@import 'article'
+@import 'tech'
+
+/* Footer */
+@import 'footer'
+
 /* Import of Media Queries Files*/
 @import 'tablet_vp'
 @import 'mobile_vp'
